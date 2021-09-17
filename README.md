@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ChuquEmeka
+- 👋 Hi, I’m Edeh Emeka N.
 - 👀 I’m interested in R, Python DA and SQL
 - 🌱 I’m currently learning Data Analytics
 - 💞️ I’m looking to collaborate on DA Projects
