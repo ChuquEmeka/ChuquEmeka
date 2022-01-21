@@ -1,4 +1,5 @@
-- 👋 # Hi, I’m Edeh Emeka N.
+  # Hi, I’m Edeh Emeka N. 👋
+  
 - 👀 I’m interested in R, Python and SQL
 - 🌱 I’m currently working and learning in the field Data Science
 - 💞️ I’m looking to collaborate on Data Science Projects
