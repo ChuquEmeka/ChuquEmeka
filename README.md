@@ -9,7 +9,7 @@ ChuquEmeka/ChuquEmeka is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
-[![Gmail](https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:abc@edeh.emeka84@gmail.com)
+[![Gmail](https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:edeh.emeka84@gmail.com)
 
 ## Statistics
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chuquemeka&count_private=true&show_icons=true&theme=onedark)](https://github.com/chuquemeka/github-readme-stats)
