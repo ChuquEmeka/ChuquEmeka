@@ -1,9 +1,8 @@
 - 👋 # Hi, I’m Edeh Emeka N.
 - 👀 I’m interested in R, Python and SQL
-- 🌱 I’m currently working and learning in the field of Data Science
-- 💞️ I’m looking to collaborate on DA Projects
-- 📫 You can reach me here or via twitter @danke_mersi
-
+- 🌱 I’m currently working and learning in the field Data Science
+- 💞️ I’m looking to collaborate on Data Science Projects
+- 📫 You can reach me here or via any of my contacts below.
 <!---
 ChuquEmeka/ChuquEmeka is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
@@ -18,3 +17,5 @@ You can click the Preview link to take a look at your changes.
 [![Twitter Follow](https://img.shields.io/twitter/follow/Danke_Mersi?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fchuquemeka&screen_name=chuquemeka)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/data_analyses?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fchuquemeka&screen_name=chuquemeka)
+
+
