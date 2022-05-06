@@ -1,7 +1,7 @@
   # Hi, I’m Edeh Emeka N. 👋
   
-- 👀 I’m interested in R, Python and SQL
-- 🌱 I’m currently working and learning in the field Data Science
+- 👀 I’m interested in R, Python, SQL and Tableau
+- 🌱 I’m currently working and learning in the field of Data Science
 - 💞️ I’m looking to collaborate on Data Science Projects
 - 📫 You can reach me here or via any of my contacts below.
 <!---
@@ -15,7 +15,7 @@ You can click the Preview link to take a look at your changes.
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chuquemeka&count_private=true&show_icons=true&theme=onedark)](https://github.com/chuquemeka/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chuquemeka&layout=compact&theme=blue)](https://github.com/chuquemeka/github-readme-stats)
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/Danke_Mersi?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fchuquemeka&screen_name=chuquemeka)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Danke_Mersi?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fdata_analyses&screen_name=data_analyses)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/data_analyses?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fchuquemeka&screen_name=chuquemeka)
 
