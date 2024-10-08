@@ -33,7 +33,9 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 
 ## 📈 Statistics
 
-[![Emeka's GitHub stats](https://github-readme-stats.vercel.app/api?username=chuquemeka&count_private=true&show_icons=true&theme=onedark)](https://github.com/chuquemeka/github-readme-stats)
+[![Emeka's GitHub stats](https://github-readme-stats.vercel.app/api?username=chuquemeka&count_private=true&show_icons=true&theme=onedark&hide=prs,issues,contribs)](https://github.com/chuquemeka/github-readme-stats)
+
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chuquemeka&layout=compact&theme=blue)](https://github.com/chuquemeka/github-readme-stats)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Data_Analyses?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FData_Analyses&screen_name=Data_Analyses)
