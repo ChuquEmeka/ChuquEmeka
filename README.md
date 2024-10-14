@@ -29,12 +29,15 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 ---
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
+
+<!--
 [![Gmail](https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:edeh.emeka84@gmail.com)
+-->
 
+<!--
 ## 📈 Statistics
-
 [![Emeka's GitHub stats](https://github-readme-stats.vercel.app/api?username=chuquemeka&count_private=true&show_icons=true&theme=onedark&hide=prs,issues,contribs)](https://github.com/chuquemeka/github-readme-stats)
-
+-->
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chuquemeka&layout=compact&theme=blue)](https://github.com/chuquemeka/github-readme-stats)
 
