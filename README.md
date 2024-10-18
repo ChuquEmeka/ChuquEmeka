@@ -2,9 +2,9 @@
 
 I am a Data Professional with over four years of experience in **data engineering**, **data analysis**, and **data science**. My expertise covers a wide range of data processes, including building and optimizing **end-to-end data pipelines**, conducting advanced **data analysis**, and developing **predictive models**. I leverage tools and platforms like:
 
-- **dbt**, **Databricks**, **Snowflake**
-- **AWS Services** (S3, Redshift, etc.)
-- **Python**, **SQL**
+- **dbt**, **Databricks**,**Databricks Asset Bundles**, **Snowflake**
+- **AWS Services** (S3, Redshift, Athena, etc.)
+- **Python**, **SQL**, **R**  
 - **Power BI**, **Tableau**, **Looker**, **QuickSight**
 - **Git**, **GitHub Actions** for version control and CI/CD automation
 
@@ -12,8 +12,8 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 
 ## 💻 Skills
 
-- **Data Pipelines**: dbt, Databricks, Snowflake, AWS (S3, Redshift)
-- **Programming**: Python, SQL
+- **Data Pipelines**: dbt, Databricks, Databricks Asset Bundles, Snowflake, AWS (S3, Redshift)
+- **Programming**: Python, SQL, R
 - **Data Visualization**: Power BI, Tableau, Looker, QuickSight
 - **Version Control**: Git, GitHub, GitHub Actions
 - **Cloud Platforms**: AWS
