@@ -8,7 +8,7 @@ I am a Data Professional with over four years of experience in **data engineerin
 - **Power BI**, **Tableau**, **Looker**, **QuickSight**
 - **Git**, **GitHub Actions** for version control and CI/CD automation
 
-With six years of prior experience in **real estate**, I bring cross-domain insights into data problem-solving. I hold a Bachelor's degree in **Real Estate** and multiple certifications in **data analytics**.
+With six years of prior experience in **real estate**, I bring cross-domain insights into data problem-solving. I hold a Bachelor's degree in **Real Estate** and multiple certifications in **data analytics/engineering**.
 
 ## 💻 Skills
 
