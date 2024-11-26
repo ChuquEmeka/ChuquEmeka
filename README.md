@@ -28,7 +28,8 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 - **Collaboration**: Working with stakeholders to define and track **KPIs**, driving data-driven strategies
 
 ---  
-Visit my YouTube page to view demonstrations of my projects: [@DATA_TIME_e](https://www.youtube.com/@DATA_TIME_e/videos)  
+Visit my YouTube page to view demonstrations of my projects: [@DATA_TIME_e](https://www.youtube.com/@DATA_TIME_e/videos) 
+  
 [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@DATA_TIME_e/videos)
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
