@@ -4,6 +4,7 @@ I am a Data Professional with over four years of experience in **data engineerin
 
 - **dbt**, **Databricks**,**Databricks Asset Bundles**, **Snowflake**
 - **AWS Services** (S3, Redshift, Athena, etc.)
+- **Google Cloud Platforms** (GCS, Google BigQuery etc.)
 - **Python**, **SQL**, **R**  
 - **Power BI**, **Tableau**, **Looker**, **QuickSight**
 - **Git**, **GitHub Actions** for version control and CI/CD automation
