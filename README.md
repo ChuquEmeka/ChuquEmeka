@@ -13,11 +13,11 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 
 ## 💻 Skills
 
-- **Data Pipelines**: dbt, Databricks, Databricks Asset Bundles, Snowflake, AWS (S3, Redshift)
+- **Data Pipelines**: dbt, Databricks, Databricks Asset Bundles, Snowflake, AWS (S3, Redshift), GCS, Google BigQuery  
 - **Programming**: Python, SQL, R
 - **Data Visualization**: Power BI, Tableau, Looker, QuickSight
 - **Version Control**: Git, GitHub, GitHub Actions
-- **Cloud Platforms**: AWS
+- **Cloud Platforms**: AWS, GCP
 
 ## 🌟 Expertise
 
