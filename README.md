@@ -45,4 +45,3 @@ Visit my YouTube page to view demonstrations of my projects: [@DATA_TIME_e](http
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chuquemeka&layout=compact&theme=blue)](https://github.com/chuquemeka/github-readme-stats)
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/Data_Analyses?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FData_Analyses&screen_name=Data_Analyses)
