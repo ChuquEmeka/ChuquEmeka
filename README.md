@@ -7,7 +7,7 @@ I am a Data Professional with over four years of experience in **data engineerin
 - **Google Cloud Platforms** (GCS, Google BigQuery etc.)
 - **Python**, **SQL**, **R**  
 - **Power BI**, **Tableau**, **Looker**, **QuickSight**
-- **Git**, **GitHub Actions** for version control and CI/CD automation
+- **Airflow**, **Git**, **GitHub Actions** for version control and CI/CD automation
 
 With six years of prior experience in **real estate**, I bring cross-domain insights into data problem-solving. I hold a Bachelor's degree in **Real Estate** and multiple certifications in **data analytics/engineering**.
 
@@ -18,6 +18,7 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 - **Data Visualization**: Power BI, Tableau, Looker, QuickSight
 - **Version Control**: Git, GitHub, GitHub Actions
 - **Cloud Platforms**: AWS, GCP
+- **Orchastration**: Airflow, Github Action 
 
 ## 🌟 Expertise
 
