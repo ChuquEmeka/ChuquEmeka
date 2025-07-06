@@ -29,7 +29,7 @@ With six years of prior experience in **real estate**, I bring cross-domain insi
 - **Collaboration**: Working with stakeholders to define and track **KPIs**, driving data-driven strategies
 
 ---  
-Visit my YouTube page to view demonstrations of my projects: [@DATA_TIME_e](https://www.youtube.com/@Data_Pipeline_Lab/videos) 
+Visit my YouTube page to view demonstrations of my projects: [@Data_Pipeline_Lab](https://www.youtube.com/@Data_Pipeline_Lab/videos) 
   
 [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/Data_Pipeline_Lab/videos)
 
