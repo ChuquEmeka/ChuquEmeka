@@ -1,34 +1,32 @@
 # Hi, I'm Edeh Emeka N.
 
-**Data & Platform Engineer** | Building reliable, scalable production data platforms on AWS & GCP with a strong focus on automation and infrastructure as code.
+Data and Platform Engineer focused on building reliable and scalable data platforms on AWS and GCP. I care a lot about automation and infrastructure as code.
 
-I design systems end-to-end — from real-time streaming and ingestion through transformation, orchestration, governance, and analytics — while bringing practical business context from six years in real estate.
+I enjoy designing systems from start to finish - real-time streaming, batch analytics, data transformation, orchestration, and analytics. Before moving into data engineering, I spent six years in real estate, which helps me bring real business understanding to technical problems.
 
 ---
 
-## 🏗️ Enterprise Data Platform
+## Enterprise Data Platform
 
-I currently design and operate a **complete, modular production-grade data platform** on AWS. All core components are managed in my dedicated organization:
+Right now I design and run a complete production-grade data platform on AWS. All the main pieces live together in my dedicated GitHub organization:
 
-**[enterprise-data-platform-emeka](https://github.com/enterprise-data-platform-emeka)**
+[enterprise-data-platform-emeka](https://github.com/enterprise-data-platform-emeka)
 
-### Key Interconnected Repositories
-These repositories are highly dependent on each other and together form an end-to-end modern data platform:
+### Main Repositories
+These projects work together as one system:
 
-- **[terraform-platform-infra-live](https://github.com/enterprise-data-platform-emeka/terraform-platform-infra-live)** — Full AWS infrastructure (VPC, S3, Glue, Redshift, MWAA, IAM, Endpoints, etc.)
-- **[platform-orchestration-mwaa-airflow](https://github.com/enterprise-data-platform-emeka/platform-orchestration-mwaa-airflow)** — Airflow DAGs for reliable orchestration
-- **[platform-glue-jobs](https://github.com/enterprise-data-platform-emeka/platform-glue-jobs)** — Bronze → Silver Spark ETL jobs
-- **[platform-dbt-analytics](https://github.com/enterprise-data-platform-emeka/platform-dbt-analytics)** — Silver → Gold dbt transformations
-- **[platform-cdc-simulator](https://github.com/enterprise-data-platform-emeka/platform-cdc-simulator)** — OLTP schema & CDC event generator
-- **[platform-docs](https://github.com/enterprise-data-platform-emeka/platform-docs)** — Architecture diagrams and teaching material
+- [terraform-platform-infra-live](https://github.com/enterprise-data-platform-emeka/terraform-platform-infra-live) - Full AWS infrastructure including VPC, S3, Glue, Redshift, MWAA, and IAM
+- [platform-orchestration-mwaa-airflow](https://github.com/enterprise-data-platform-emeka/platform-orchestration-mwaa-airflow) - Airflow DAGs for orchestration
+- [platform-glue-jobs](https://github.com/enterprise-data-platform-emeka/platform-glue-jobs) - Bronze to Silver Spark ETL jobs
+- [platform-dbt-analytics](https://github.com/enterprise-data-platform-emeka/platform-dbt-analytics) - Silver to Gold dbt transformations
+- [platform-cdc-simulator](https://github.com/enterprise-data-platform-emeka/platform-cdc-simulator) - CDC event generator
 
-🔗 **[View all repositories →](https://github.com/enterprise-data-platform-emeka/repositories)**
+[View the full organization](https://github.com/enterprise-data-platform-emeka/repositories)
 
 ### High-Level Architecture
 
 ```mermaid
 flowchart TD
-    %% Layers as subgraphs
     subgraph Source ["Source Layer"]
         direction TB
         Postgres[PostgreSQL RDS\nWAL Log] --> DMS[AWS DMS CDC]
@@ -44,8 +42,8 @@ flowchart TD
 
     subgraph Processing ["Processing Layer"]
         direction TB
-        Glue[Glue PySpark\nBronze → Silver] --> Silver[Silver: Cleaned Parquet]
-        Silver --> DBT[dbt + Athena\nSilver → Gold]
+        Glue[Glue PySpark\nBronze to Silver] --> Silver[Silver: Cleaned Parquet]
+        Silver --> DBT[dbt + Athena\nSilver to Gold]
         DBT --> Gold[Gold: Aggregated Parquet]
     end
 
@@ -53,7 +51,6 @@ flowchart TD
         Redshift[Redshift Serverless + Spectrum] --> BI[BI Dashboards]
     end
 
-    %% Main Data Flow
     S3Raw --> Glue
     MWAA -->|triggers| Glue
     Glue -->|valid records| Silver
@@ -61,8 +58,6 @@ flowchart TD
     Silver --> DBT
     Gold --> Redshift
     S3Raw -.->|quarantine bad batches| Quarantine
-
-    %% Orchestration links
     MWAA -.->|triggers dbt models| DBT
 
     classDef layer fill:#f0f4f8,stroke:#333,stroke-width:2px,rx:10,ry:10;
@@ -71,23 +66,37 @@ flowchart TD
 
 ---
 
-## 💻 Core Skills & Tools
-- **Pipelines & Processing**: dbt, Apache Kafka, Databricks, Glue, Spark
-- **Cloud & IaC**: AWS (S3, Glue, Athena, Redshift, IAM), **Terraform**, GCP
-- **Orchestration**: Apache Airflow (MWAA), GitHub Actions
-- **Languages**: Python, SQL
-- **Visualization**: Power BI, Tableau, Looker, QuickSight
+## Featured Public Projects
 
-## 🌟 Expertise
-- Layered data platform architecture (raw → curated → analytics)
-- Kafka streaming + dbt-driven ELT workflows
-- Terraform infrastructure with remote state & CI/CD
-- Automation, testing, and reliability at platform scale
-- Business-aligned data solutions with strong domain context
+I also have several public repositories that show my work across different tools and domains:
+
+- Databricks Asset Bundles + Real Estate Pipeline: End-to-end ELT on GCP with Delta Live Tables and medallion architecture
+- Real Estate Valuation Pipeline: Built with dbt Fusion, Snowflake, and AWS S3
+- Airflow + dbt + BigQuery Healthcare Pipeline: Full orchestration and transformation on Google Cloud
+- AWS Terraform Data Platform: Infrastructure as code for S3 data lake, Glue, Athena, and CI/CD
+- Fraud Detection and Sales Analytics Pipelines: Using dbt, Snowflake, and Tableau
+
+These projects support what I do in my main enterprise platform and show how I apply modern data engineering in practice.
 
 ---
 
-Visit my YouTube channel for project demonstrations: [@Data_Pipeline_Lab](https://www.youtube.com/@Data_Pipeline_Lab)
+## Skills and Tools
+- Pipelines and Processing: dbt, Apache Kafka, Databricks, Glue, Spark
+- Cloud and Infrastructure: AWS (S3, Glue, Athena, Redshift, IAM), Terraform, GCP
+- Orchestration: Apache Airflow (MWAA), GitHub Actions
+- Languages: Python, SQL
+- Visualization: Power BI, Tableau, Looker, QuickSight
+
+## Expertise
+- Building layered data platforms (raw, curated, and analytics layers)
+- Streaming and batch ELT workflows
+- Infrastructure as code with proper CI/CD
+- Automation and reliability at scale
+- Using domain knowledge to solve real business problems
+
+---
+
+Visit my YouTube channel to see project demos: [@Data_Pipeline_Lab](https://www.youtube.com/@Data_Pipeline_Lab)
 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Data_Pipeline_Lab)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
