@@ -64,12 +64,6 @@ flowchart TD
     class Source,Control,Processing,Serving layer;
 ```
 
-### How the Platform Works
-
-![Enterprise Data Platform Flow](aws-platform-data-flow.gif)
-
-This shows the complete data flow from source systems through the processing layers all the way to the serving layer with Redshift and BI dashboards.
-
 
 ---
 
