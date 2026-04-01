@@ -21,7 +21,7 @@ These projects work together as one system:
 - [platform-dbt-analytics](https://github.com/enterprise-data-platform-emeka/platform-dbt-analytics) - Silver to Gold dbt transformations
 - [platform-cdc-simulator](https://github.com/enterprise-data-platform-emeka/platform-cdc-simulator) - CDC event generator
 
-[View the full organization](https://github.com/enterprise-data-platform-emeka/repositories)
+[View the full organization](https://github.com/orgs/enterprise-data-platform-emeka/repositories)
 
 ### High-Level Architecture
 
