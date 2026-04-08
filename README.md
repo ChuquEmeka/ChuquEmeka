@@ -23,46 +23,53 @@ These projects work together as one system:
 
 [View the full organization](https://github.com/orgs/enterprise-data-platform-emeka/repositories)
 
-### High-Level Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
     subgraph Source ["Source Layer"]
         direction TB
         Postgres[PostgreSQL RDS\nWAL Log] --> DMS[AWS DMS CDC]
-        DMS --> S3Raw[S3 Data Lake\nBronze: Raw CDC Parquet]
-    end
-
-    subgraph Control ["Control Plane"]
-        direction TB
-        CW[CloudWatch + EventBridge] --> AI[AI Ops Agent\nECS Fargate + Claude]
-        AI --> MWAA[MWAA Airflow Orchestration]
-        MWAA -.->|auto-recover| AI
+        DMS --> S3Raw[S3 Bronze\nRaw CDC Parquet]
     end
 
     subgraph Processing ["Processing Layer"]
         direction TB
-        Glue[Glue PySpark\nBronze to Silver] --> Silver[Silver: Cleaned Parquet]
+        Glue[Glue PySpark\nBronze to Silver] --> Silver[S3 Silver\nCleaned Parquet]
         Silver --> DBT[dbt + Athena\nSilver to Gold]
-        DBT --> Gold[Gold: Aggregated Parquet]
+        DBT --> Gold[S3 Gold\nAggregated Parquet]
     end
 
     subgraph Serving ["Serving Layer"]
-        Redshift[Redshift Serverless + Spectrum] --> BI[BI Dashboards]
+        direction TB
+        Redshift[Redshift Serverless] --> BI[BI Dashboards]
+    end
+
+    subgraph Analytics ["Natural Language Analytics Agent"]
+        direction TB
+        NLQ[User NL Question] --> Agent[Analytics Agent\nECS Fargate + Claude API]
+        Agent --> SchemaRes[Schema Resolver\nGlue Catalog + dbt artifacts]
+        SchemaRes --> SQLGen[SQL Generator\nPartition-aware Athena SQL]
+        SQLGen --> Guardrails[Guardrails\nSELECT-only, cost check]
+        Guardrails --> Exec[Athena Execution]
+        Exec --> Validate[Result Validator\nSanity checks]
+        Validate --> Output[Chart + Insight + SQL\nAssumptions flagged]
     end
 
     S3Raw --> Glue
-    MWAA -->|triggers| Glue
-    Glue -->|valid records| Silver
-    Glue -.->|invalid records| Quarantine[Quarantine\nInvalid Records]
-    Silver --> DBT
+    MWAA[MWAA Airflow\nOrchestration] -->|triggers| Glue
+    MWAA -->|triggers dbt| DBT
+    Glue -.->|invalid records| Quarantine[S3 Quarantine]
     Gold --> Redshift
-    S3Raw -.->|quarantine bad batches| Quarantine
-    MWAA -.->|triggers dbt models| DBT
+    Gold --> SchemaRes
+    Exec -->|queries| Gold
+    DBT -.->|uploads dbt artifacts| SchemaRes
 
-    classDef layer fill:#f0f4f8,stroke:#333,stroke-width:2px,rx:10,ry:10;
-    class Source,Control,Processing,Serving layer;
+    classDef layer fill:#f0f4f8,stroke:#333,stroke-width:2px;
+    class Source,Processing,Serving,Analytics layer;
 ```
+
+---
 
 
 ---
