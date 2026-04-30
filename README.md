@@ -5,7 +5,7 @@
 <br/>
 
 I build production-grade data platforms end-to-end.<br/>
-**PostgreSQL CDC → Bronze → PySpark → Silver → dbt → Gold → Redshift → AI Analytics Layer**
+**PostgreSQL CDC → Bronze → PySpark → Silver → dbt → Gold → Redshift → AI Analytics Agent**
 
 <br/>
 
@@ -55,6 +55,7 @@ Six years in real estate before engineering. I bring real business context to te
 **Orchestration & Serving**
 
 ![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white)
+![AWS Step Functions](https://img.shields.io/badge/Step_Functions-FF4F8B?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Amazon S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazon-s3&logoColor=white)
 ![Amazon Redshift](https://img.shields.io/badge/Redshift-8C4FFF?style=flat-square&logo=amazon-redshift&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -125,10 +126,11 @@ flowchart LR
 
 | Project | Stack | What it demonstrates |
 |---|---|---|
-| Real Estate ELT Pipeline | Databricks, Delta Live Tables, GCP | Medallion architecture with streaming ingestion on GCP |
-| Real Estate Valuation Pipeline | dbt Fusion, Snowflake, S3 | Multi-source transformation with Snowflake as the serving layer |
-| Healthcare Analytics Pipeline | Airflow, dbt, BigQuery | Full orchestration and transformation on Google Cloud |
-| Fraud Detection Pipeline | dbt, Snowflake, Tableau | End-to-end analytics pipeline with BI visualisation |
+| [Real Estate ELT Pipeline](https://github.com/ChuquEmeka/Databricks_Asset_Bundles_Real_Estate_Data_Pipeline_Youtube) | Databricks, Delta Live Tables, GCP | Medallion architecture with streaming ingestion on GCP |
+| [Real Estate Valuation Pipeline](https://github.com/ChuquEmeka/real_estate_valuation_dbt_fusion_snowflake_aws_pipeline) | dbt Fusion, Snowflake, S3 | Multi-source transformation with Snowflake as the serving layer |
+| [Healthcare Analytics Pipeline](https://github.com/ChuquEmeka/Airflow-dbt-bigquery-gcs-healthcare-data-pipeline) | Airflow, dbt, BigQuery, GCS | Full orchestration and transformation on Google Cloud |
+| [Fraud Detection Pipeline](https://github.com/ChuquEmeka/DBT-Fraud-Detection-Data-Pipeline) | dbt, Snowflake | End-to-end analytics pipeline with dbt data modelling |
+| [End-to-End Snowflake Pipeline](https://github.com/ChuquEmeka/End-to-End-Data-Pipeline-Snowflake-dbt-Tableau) | Snowflake, dbt, Tableau | Full pipeline from ingestion to Tableau BI dashboard |
 
 ---
 
