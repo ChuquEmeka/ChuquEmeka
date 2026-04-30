@@ -1,15 +1,16 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi%2C+I%27m+Emeka+%F0%9F%91%8B;Data+%26+Platform+Engineer;AWS+%7C+dbt+%7C+Airflow+%7C+Terraform" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi%2C+I%27m+Emeka;Data+Platform+Engineer;AWS+%7C+dbt+%7C+Airflow+%7C+Terraform" alt="Typing SVG" />
 
 <br/>
 
-I build production-grade data platforms end-to-end.<br/>
-**PostgreSQL CDC → Bronze → PySpark → Silver → dbt → Gold → Redshift → AI Analytics Agent**
+I design and build production-grade data platforms on AWS, from CDC ingestion to analytics and AI.
+
+**PostgreSQL CDC → Data Lake (Bronze) → PySpark (Silver) → dbt (Gold) → Redshift → Analytics Agent**
 
 <br/>
 
-Six years in real estate before engineering. I bring real business context to technical decisions.
+I combine 6 years of real estate domain experience with data engineering to build systems that reflect real business workflows.  
 
 <br/>
 
