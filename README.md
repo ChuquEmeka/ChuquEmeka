@@ -1,110 +1,141 @@
-# Hi, I'm Edeh Emeka N.
+<div align="center">
 
-Data and Platform Engineer focused on building reliable and scalable data platforms on AWS and GCP. I care a lot about automation and infrastructure as code.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi%2C+I%27m+Emeka+%F0%9F%91%8B;Data+%26+Platform+Engineer;AWS+%7C+dbt+%7C+Airflow+%7C+Terraform" alt="Typing SVG" />
 
-I enjoy designing systems from start to finish - real-time streaming, batch analytics, data transformation, orchestration, and analytics. Before moving into data engineering, I spent six years in real estate, which helps me bring real business understanding to technical problems.
+<br/>
+
+I build production-grade data platforms end-to-end.<br/>
+**PostgreSQL CDC → Bronze → PySpark → Silver → dbt → Gold → Redshift → AI Analytics Layer**
+
+<br/>
+
+Six years in real estate before engineering. I bring real business context to technical decisions.
+
+<br/>
+
+[![YouTube](https://img.shields.io/badge/YouTube-Data_Pipeline_Lab-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Data_Pipeline_Lab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Edeh_Emeka-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
+![Profile Views](https://komarev.com/ghpvc/?username=ChuquEmeka&style=for-the-badge&color=0077B5&label=Profile+Views)
+
+</div>
+
+---
+
+## GitHub Stats
+
+<div align="center">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=ChuquEmeka&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChuquEmeka&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=ChuquEmeka&theme=tokyonight&hide_border=true" />
+</div>
+
+---
+
+## Tools & Technologies
+
+**Cloud & Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=FF9900)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+
+**Data Processing & Transformation**
+
+![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+
+**Orchestration & Serving**
+
+![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazon-s3&logoColor=white)
+![Amazon Redshift](https://img.shields.io/badge/Redshift-8C4FFF?style=flat-square&logo=amazon-redshift&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+
+**Languages & BI**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=power-bi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
 
 ---
 
 ## Enterprise Data Platform
 
-Right now I design and run a complete production-grade data platform on AWS. All the main pieces live together in my dedicated GitHub organization:
+A complete production-grade AWS data platform built as a single coherent system.
+All source, infrastructure, and application code lives in a dedicated GitHub organisation.
 
-[enterprise-data-platform-emeka](https://github.com/enterprise-data-platform-emeka)
+**Organisation:** [enterprise-data-platform-emeka](https://github.com/enterprise-data-platform-emeka)
 
-### Main Repositories
-These projects work together as one system:
+| Repository | What it does |
+|---|---|
+| [terraform-platform-infra-live](https://github.com/enterprise-data-platform-emeka/terraform-platform-infra-live) | All AWS infrastructure across 9 Terraform modules: VPC, S3, Glue, Redshift, MWAA, ECS Fargate, Step Functions, and monitoring |
+| [platform-analytics-agent](https://github.com/enterprise-data-platform-emeka/platform-analytics-agent) | Natural language → SQL → chart and insight via Claude API on ECS Fargate with FastAPI and Streamlit |
+| [platform-glue-jobs](https://github.com/enterprise-data-platform-emeka/platform-glue-jobs) | PySpark Bronze to Silver ETL across 6 parallel Glue jobs |
+| [platform-dbt-analytics](https://github.com/enterprise-data-platform-emeka/platform-dbt-analytics) | dbt Silver to Gold models with data quality tests on Athena |
+| [platform-orchestration-mwaa-airflow](https://github.com/enterprise-data-platform-emeka/platform-orchestration-mwaa-airflow) | Airflow DAGs deployed on Amazon MWAA |
+| [platform-cdc-simulator](https://github.com/enterprise-data-platform-emeka/platform-cdc-simulator) | PostgreSQL CDC event generator for end-to-end pipeline testing |
 
-- [terraform-platform-infra-live](https://github.com/enterprise-data-platform-emeka/terraform-platform-infra-live) - Full AWS infrastructure including VPC, S3, Glue, Redshift, MWAA, and IAM
-- [platform-orchestration-mwaa-airflow](https://github.com/enterprise-data-platform-emeka/platform-orchestration-mwaa-airflow) - Airflow DAGs for orchestration
-- [platform-glue-jobs](https://github.com/enterprise-data-platform-emeka/platform-glue-jobs) - Bronze to Silver Spark ETL jobs
-- [platform-dbt-analytics](https://github.com/enterprise-data-platform-emeka/platform-dbt-analytics) - Silver to Gold dbt transformations
-- [platform-cdc-simulator](https://github.com/enterprise-data-platform-emeka/platform-cdc-simulator) - CDC event generator
-
-[View the full organization](https://github.com/orgs/enterprise-data-platform-emeka/repositories)
-
-## Architecture
+<details>
+<summary><b>View architecture diagram</b></summary>
+<br>
 
 ```mermaid
-flowchart TD
-    subgraph Source ["Source Layer"]
-        direction TB
-        Postgres[PostgreSQL RDS\nWAL Log] --> DMS[AWS DMS CDC]
-        DMS --> S3Raw[S3 Bronze\nRaw CDC Parquet]
+flowchart LR
+    subgraph Source["Source Layer"]
+        PG[PostgreSQL RDS] -->|WAL| DMS[AWS DMS CDC]
     end
 
-    subgraph Processing ["Processing Layer"]
-        direction TB
-        Glue[Glue PySpark\nBronze to Silver] --> Silver[S3 Silver\nCleaned Parquet]
-        Silver --> DBT[dbt + Athena\nSilver to Gold]
-        DBT --> Gold[S3 Gold\nAggregated Parquet]
+    subgraph Bronze["Bronze Layer"]
+        DMS --> S3B[S3 Bronze\nRaw Parquet]
     end
 
-    subgraph Serving ["Serving Layer"]
-        direction TB
-        Redshift[Redshift Serverless] --> BI[BI Dashboards]
+    subgraph Silver["Silver Layer"]
+        S3B --> Glue[Glue PySpark\n6 ETL Jobs]
+        Glue --> S3S[S3 Silver\nCleaned Parquet]
     end
 
-    subgraph Analytics ["Natural Language Analytics Agent"]
-        direction TB
-        NLQ[User NL Question] --> Agent[Analytics Agent\nECS Fargate + Claude API]
-        Agent --> SchemaRes[Schema Resolver\nGlue Catalog + dbt artifacts]
-        SchemaRes --> SQLGen[SQL Generator\nPartition-aware Athena SQL]
-        SQLGen --> Guardrails[Guardrails\nSELECT-only, cost check]
-        Guardrails --> Exec[Athena Execution]
-        Exec --> Validate[Result Validator\nSanity checks]
-        Validate --> Output[Chart + Insight + SQL\nAssumptions flagged]
+    subgraph Gold["Gold Layer"]
+        S3S --> DBT[dbt + Athena]
+        DBT --> S3G[S3 Gold\nAggregated Parquet]
     end
 
-    S3Raw --> Glue
-    MWAA[MWAA Airflow\nOrchestration] -->|triggers| Glue
-    MWAA -->|triggers dbt| DBT
-    Glue -.->|invalid records| Quarantine[S3 Quarantine]
-    Gold --> Redshift
-    Gold --> SchemaRes
-    Exec -->|queries| Gold
-    DBT -.->|uploads dbt artifacts| SchemaRes
+    subgraph Serving["Serving Layer"]
+        S3G --> RS[Redshift Serverless]
+        S3G --> Agent[Analytics Agent\nECS Fargate + Claude API]
+    end
 
-    classDef layer fill:#f0f4f8,stroke:#333,stroke-width:2px;
-    class Source,Processing,Serving,Analytics layer;
+    MWAA[MWAA Airflow] -.->|orchestrates| Glue
+    MWAA -.->|orchestrates| DBT
 ```
 
----
-
-
----
-
-## Featured Public Projects
-
-I also have several public repositories that show my work across different tools and domains:
-
-- Databricks Asset Bundles + Real Estate Pipeline: End-to-end ELT on GCP with Delta Live Tables and medallion architecture
-- Real Estate Valuation Pipeline: Built with dbt Fusion, Snowflake, and AWS S3
-- Airflow + dbt + BigQuery Healthcare Pipeline: Full orchestration and transformation on Google Cloud
-- AWS Terraform Data Platform: Infrastructure as code for S3 data lake, Glue, Athena, and CI/CD
-- Fraud Detection and Sales Analytics Pipelines: Using dbt, Snowflake, and Tableau
-
-These projects support what I do in my main enterprise platform and show how I apply modern data engineering in practice.
+</details>
 
 ---
 
-## Skills and Tools
-- Pipelines and Processing: dbt, Apache Kafka, Databricks, Glue, Spark
-- Cloud and Infrastructure: AWS (S3, Glue, Athena, Redshift, IAM), Terraform, GCP
-- Orchestration: Apache Airflow (MWAA), GitHub Actions
-- Languages: Python, SQL
-- Visualization: Power BI, Tableau, Looker, QuickSight
+## Other Projects
 
-## Expertise
-- Building layered data platforms (raw, curated, and analytics layers)
-- Streaming and batch ELT workflows
-- Infrastructure as code with proper CI/CD
-- Automation and reliability at scale
-- Using domain knowledge to solve real business problems
+| Project | Stack | What it demonstrates |
+|---|---|---|
+| Real Estate ELT Pipeline | Databricks, Delta Live Tables, GCP | Medallion architecture with streaming ingestion on GCP |
+| Real Estate Valuation Pipeline | dbt Fusion, Snowflake, S3 | Multi-source transformation with Snowflake as the serving layer |
+| Healthcare Analytics Pipeline | Airflow, dbt, BigQuery | Full orchestration and transformation on Google Cloud |
+| Fraud Detection Pipeline | dbt, Snowflake, Tableau | End-to-end analytics pipeline with BI visualisation |
 
 ---
 
-Visit my YouTube channel to see project demos: [@Data_Pipeline_Lab](https://www.youtube.com/@Data_Pipeline_Lab)
+<div align="center">
 
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Data_Pipeline_Lab)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
+**Watch pipeline demos and tutorials on my YouTube channel**
+
+[![YouTube](https://img.shields.io/badge/YouTube-Data_Pipeline_Lab-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Data_Pipeline_Lab)
+
+</div>
