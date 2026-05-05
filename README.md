@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:444C1D,100:444C1D&height=120&section=header&animation=fadeIn" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Emeka+Nweke+Edeh+%7C+Data+Platform+Engineer;AWS+%7C+Databricks+%7C+dbt+%7C+Airflow+%7C+Terraform;Building+production-grade+data+platforms;From+CDC+ingestion+to+AI-powered+analytics" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=95A73F&center=true&vCenter=true&width=700&lines=Emeka+Nweke+Edeh+%7C+Data+Platform+Engineer;AWS+%7C+Databricks+%7C+dbt+%7C+Airflow+%7C+Terraform;Building+production-grade+data+platforms;From+CDC+ingestion+to+AI-powered+analytics" alt="Typing SVG" />
 
 <br/>
 
@@ -127,7 +127,7 @@ The tools I use regularly in production, across cloud infrastructure, data proce
 ## Contribution Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChuquEmeka&theme=tokyo-night&hide_border=true&area=true&color=58A6FF&line=58A6FF&point=ffffff" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChuquEmeka&theme=tokyo-night&hide_border=true&area=true&color=95A73F&line=95A73F&point=ffffff&area_color=95A73F" width="100%" />
 </div>
 
 ---
