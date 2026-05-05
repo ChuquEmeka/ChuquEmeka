@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a2744,100:58A6FF&height=120&section=header&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:444C1D,100:444C1D&height=120&section=header&animation=fadeIn" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Emeka+Nweke+Edeh+%7C+Data+Platform+Engineer;AWS+%7C+Databricks+%7C+dbt+%7C+Airflow+%7C+Terraform;Building+production-grade+data+platforms;From+CDC+ingestion+to+AI-powered+analytics" alt="Typing SVG" />
 
@@ -88,6 +88,8 @@ flowchart LR
 
 ## Tools & Technologies
 
+The tools I use regularly in production, across cloud infrastructure, data processing, orchestration, and serving.
+
 **Cloud & Infrastructure**
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=FF9900)
@@ -122,15 +124,7 @@ flowchart LR
 
 ---
 
-## GitHub Stats
-
-<div align="center">
-  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChuquEmeka&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-  &nbsp;&nbsp;
-  <img height="195" src="https://streak-stats.demolab.com/?user=ChuquEmeka&theme=tokyonight&hide_border=true" />
-</div>
-
-<br/>
+## Contribution Activity
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChuquEmeka&theme=tokyo-night&hide_border=true&area=true&color=58A6FF&line=58A6FF&point=ffffff" width="100%" />
@@ -151,5 +145,5 @@ I document what I build: pipeline walkthroughs, architecture deep-dives, and liv
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a2744,100:0d1117&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:444C1D,50:444C1D,100:0d1117&height=80&section=footer" width="100%"/>
 </div>
