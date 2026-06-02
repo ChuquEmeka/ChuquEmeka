@@ -60,9 +60,81 @@ I built a multi-repo AWS data platform that takes raw PostgreSQL change events a
 - analytics agent answers plain-English questions with generated SQL, chart output, and plain-English insights
 - per-session platform cost is kept to roughly $1.50-$2.50 for a 2-3 hour run
 
-<p align="center">
-  <img src="./aws-platform-data-flow.gif" alt="Enterprise Data Platform architecture overview" width="100%" />
-</p>
+```mermaid
+flowchart LR
+    classDef source fill:#e0f2fe,stroke:#0284c7,color:#0f172a,stroke-width:2px
+    classDef bronze fill:#fef3c7,stroke:#d97706,color:#78350f,stroke-width:2px
+    classDef silver fill:#e2e8f0,stroke:#64748b,color:#0f172a,stroke-width:2px
+    classDef gold fill:#fef9c3,stroke:#ca8a04,color:#713f12,stroke-width:2px
+    classDef serve fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:2px
+    classDef access fill:#d1fae5,stroke:#059669,color:#064e3b,stroke-width:2px
+    classDef control fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:2px
+    classDef monitor fill:#fee2e2,stroke:#dc2626,color:#7f1d1d,stroke-width:2px
+    classDef quarantine fill:#ffe4e6,stroke:#e11d48,color:#881337,stroke-width:2px
+
+    subgraph SRC["Source Layer"]
+        PG["PostgreSQL RDS<br/>orders, customers, payments, shipments"]:::source
+        DMS["AWS DMS<br/>full load + CDC"]:::source
+    end
+
+    subgraph LAKE["S3 Data Lake"]
+        BRZ["Bronze S3<br/>immutable CDC parquet"]:::bronze
+        SLV["Silver S3<br/>reconciled star schema"]:::silver
+        GLD["Gold S3<br/>business marts on Athena"]:::gold
+        QTN["Quarantine S3<br/>invalid records + error reason"]:::quarantine
+    end
+
+    subgraph PROC["Processing Layer"]
+        GLUE["AWS Glue PySpark<br/>6 parallel Bronze -> Silver jobs"]:::silver
+        CRAWLER["Glue Crawler<br/>catalog + partitions"]:::silver
+        DBT["dbt on Athena<br/>15 models + tests"]:::gold
+    end
+
+    subgraph CTRL["Control Plane"]
+        SF["Step Functions<br/>default daily orchestrator"]:::control
+        MWAA["MWAA Airflow<br/>alternative orchestrator"]:::control
+        GHA["GitHub Actions<br/>CI/CD and session workflows"]:::control
+    end
+
+    subgraph SERVE["Serving Layer"]
+        RS["Redshift Serverless<br/>Spectrum external tables"]:::serve
+        API["Analytics Agent API<br/>FastAPI on ECS Fargate"]:::serve
+        UI["Streamlit UI<br/>browser access"]:::access
+        SLACK["Slack MCP Gateway<br/>chat access"]:::access
+    end
+
+    subgraph OBS["Observability"]
+        CW["CloudWatch<br/>dashboards, alarms, logs"]:::monitor
+        AUDIT["S3 audit trail<br/>request logs + artifacts"]:::monitor
+    end
+
+    PG --> DMS --> BRZ
+    BRZ --> GLUE
+    GLUE --> SLV
+    GLUE -. invalid records .-> QTN
+    SLV --> CRAWLER --> DBT --> GLD
+    GLD --> RS
+    GLD --> API
+    API --> UI
+    API --> SLACK
+
+    SF -. orchestrates .-> GLUE
+    SF -. orchestrates .-> CRAWLER
+    SF -. orchestrates .-> DBT
+    MWAA -. orchestrates .-> GLUE
+    MWAA -. orchestrates .-> CRAWLER
+    MWAA -. orchestrates .-> DBT
+    GHA -. deploys .-> SF
+    GHA -. deploys .-> MWAA
+    GHA -. deploys .-> API
+
+    GLUE -. metrics/logs .-> CW
+    DBT -. test results .-> CW
+    RS -. query serving .-> CW
+    API -. app logs .-> CW
+    API -. request trace .-> AUDIT
+    DBT -. manifest/catalog .-> AUDIT
+```
 
 ### Key Repositories
 
