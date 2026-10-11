@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:444C1D,100:444C1D&height=120&section=header&animation=fadeIn" width="100%"/>
+<a href="https://chuquemeka.dev">
+  <img src="./assets/banner.svg" alt="Emeka Nweke Edeh, Data Platform Engineer. Visit chuquemeka.dev" width="100%" />
+</a>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=95A73F&center=true&vCenter=true&width=780&lines=Edeh+Emeka+N.+%7C+Data+Platform+Engineer;AWS+%7C+GCP+%7C+Databricks+%7C+dbt+%7C+Airflow+%7C+Terraform;Building+end-to-end+analytics+systems;From+CDC+ingestion+to+AI-powered+analytics" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=5FD3A5&center=true&vCenter=true&width=780&lines=Edeh+Emeka+N.+%7C+Data+Platform+Engineer;AWS+%7C+GCP+%7C+Databricks+%7C+dbt+%7C+Airflow+%7C+Terraform;Building+end-to-end+analytics+systems;From+CDC+ingestion+to+AI-powered+analytics" alt="Typing SVG" />
 
 </div>
 
@@ -20,6 +22,7 @@ I design and ship data platforms from infrastructure through stakeholder access:
 
 <div align="center">
 
+[![Website](https://img.shields.io/badge/Website-chuquemeka.dev-5FD3A5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chuquemeka.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Edeh_Emeka-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edeh/)
 [![YouTube](https://img.shields.io/badge/YouTube-Data_Pipeline_Lab-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Data_Pipeline_Lab)
 ![Profile Views](https://komarev.com/ghpvc/?username=ChuquEmeka&style=for-the-badge&color=0077B5&label=Profile+Views)
@@ -196,7 +199,7 @@ I use public projects to explore different platform shapes, warehouses, and clou
 ## Contribution Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChuquEmeka&theme=tokyo-night&hide_border=true&area=true&color=95A73F&line=95A73F&point=ffffff&area_color=95A73F" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChuquEmeka&theme=tokyo-night&hide_border=true&area=true&color=5FD3A5&line=5FD3A5&point=ffffff&area_color=5FD3A5" width="100%" />
 </div>
 
 <div align="center">

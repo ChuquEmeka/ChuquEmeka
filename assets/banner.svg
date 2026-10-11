@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Emeka Nweke Edeh, Data Platform Engineer. Visit chuquemeka.dev">
+  <defs>
+    <radialGradient id="bg" cx="78%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0f2a22"/>
+      <stop offset="55%" stop-color="#0b1411"/>
+      <stop offset="100%" stop-color="#070909"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5fd3a5"/>
+      <stop offset="50%" stop-color="#7fe0d6"/>
+      <stop offset="100%" stop-color="#67b8e8"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.35 0; 0.35 0; -0.35 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5fd3a5" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5fd3a5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#5fd3a5" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#5fd3a5" fill-opacity="0.07"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#dots)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#5fd3a5" stroke-opacity="0.22" stroke-width="1.5"/>
+  <ellipse cx="955" cy="190" rx="190" ry="120" fill="#5fd3a5" fill-opacity="0.10" filter="url(#softglow)"/>
+
+  <!-- twinkling points -->
+  <g fill="#7fe0d6">
+    <circle cx="720" cy="60" r="1.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1150" cy="70" r="1.4"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="-1s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="310" r="1.6"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="3.8s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="690" cy="300" r="1.2"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.9s" begin="-0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="40" r="1.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.4s" begin="-1.6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ===================== LEFT: identity ===================== -->
+  <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#5fd3a5" letter-spacing="3">
+    <circle cx="70" cy="86" r="4" fill="#5fd3a5" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="84" y="91">DATA PLATFORM ENGINEERING</text>
+  </g>
+
+  <text x="64" y="168" fill="url(#name)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="800" textLength="600" lengthAdjust="spacingAndGlyphs">EMEKA NWEKE EDEH</text>
+
+  <text x="66" y="210" fill="#c4cfc9" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="3" textLength="596" lengthAdjust="spacing">DATA PLATFORM ENGINEER · AWS · GCP · DATABRICKS</text>
+
+  <rect x="66" y="226" width="0" height="3" rx="1.5" fill="url(#name)">
+    <animate attributeName="width" values="0;380;380;0" keyTimes="0;0.35;0.85;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- CTA pill -->
+  <g>
+    <rect x="66" y="252" width="250" height="40" rx="20" fill="#5fd3a5" fill-opacity="0.08" stroke="#5fd3a5" stroke-opacity="0.55" stroke-width="1.5"/>
+    <circle cx="90" cy="272" r="4.5" fill="#5fd3a5" filter="url(#glow)">
+      <animate attributeName="r" values="4.5;6;4.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="106" y="277" fill="#bff3df" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">CHUQUEMEKA.DEV  →</text>
+  </g>
+
+  <text x="66" y="326" fill="#7d8a83" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" letter-spacing="0.5">Berlin, Germany · 4+ years · CDC · Lakehouse · dbt · Terraform · Kafka</text>
+
+  <!-- ===================== RIGHT: medallion stack ===================== -->
+
+  <!-- source database -->
+  <g transform="translate(748 252)">
+    <path d="M0 8 v40 a26 8 0 0 0 52 0 v-40" fill="#0d1613" stroke="#7d8a83" stroke-width="1.5"/>
+    <ellipse cx="26" cy="8" rx="26" ry="8" fill="#13201b" stroke="#7d8a83" stroke-width="1.5"/>
+    <path d="M0 22 a26 8 0 0 0 52 0 M0 35 a26 8 0 0 0 52 0" fill="none" stroke="#7d8a83" stroke-opacity="0.5" stroke-width="1.2"/>
+    <text x="26" y="78" text-anchor="middle" fill="#7d8a83" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" letter-spacing="2">SOURCE</text>
+  </g>
+  <!-- CDC link into bronze -->
+  <path id="cdc" d="M800 278 C 840 278, 850 275, 860 272" fill="none" stroke="#c98a4b" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 5">
+    <animate attributeName="stroke-dashoffset" values="18;0" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <text x="808" y="266" fill="#c98a4b" fill-opacity="0.8" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="10" letter-spacing="1.5">CDC</text>
+
+  <!-- vertical beam through the stack -->
+  <rect x="925" y="60" width="60" height="240" fill="url(#beam)" opacity="0.6">
+    <animate attributeName="opacity" values="0.35;0.75;0.35" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- BRONZE plate -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4s" repeatCount="indefinite"/>
+    <path d="M825 270 L955 314 L1085 270 L1085 280 L955 324 L825 280 Z" fill="#5a3a1c" fill-opacity="0.9"/>
+    <path d="M825 270 L955 226 L1085 270 L955 314 Z" fill="#c98a4b" fill-opacity="0.16" stroke="#c98a4b" stroke-width="1.6"/>
+    <path d="M868 255 L998 299 M911 241 L1041 285 M868 285 L998 241 M911 299 L1041 255" stroke="#c98a4b" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M825 270 L955 226 L1085 270 L955 314 Z" fill="none" stroke="#c98a4b" stroke-width="2.5" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.12;0.33;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <text x="1098" y="275" fill="#c98a4b" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="2">BRONZE</text>
+  </g>
+
+  <!-- SILVER plate -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4s" begin="-1.3s" repeatCount="indefinite"/>
+    <path d="M825 198 L955 242 L1085 198 L1085 208 L955 252 L825 208 Z" fill="#4a535a" fill-opacity="0.9"/>
+    <path d="M825 198 L955 154 L1085 198 L955 242 Z" fill="#a9b4bd" fill-opacity="0.14" stroke="#a9b4bd" stroke-width="1.6"/>
+    <path d="M868 183 L998 227 M911 169 L1041 213 M868 213 L998 169 M911 227 L1041 183" stroke="#a9b4bd" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M825 198 L955 154 L1085 198 L955 242 Z" fill="none" stroke="#dfe6eb" stroke-width="2.5" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;0.9;0;0" keyTimes="0;0.33;0.45;0.66;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <text x="1098" y="203" fill="#a9b4bd" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="2">SILVER</text>
+  </g>
+
+  <!-- GOLD plate -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4s" begin="-2.6s" repeatCount="indefinite"/>
+    <path d="M825 126 L955 170 L1085 126 L1085 136 L955 180 L825 136 Z" fill="#5c4a12" fill-opacity="0.9"/>
+    <path d="M825 126 L955 82 L1085 126 L955 170 Z" fill="#e2b93b" fill-opacity="0.15" stroke="#e2b93b" stroke-width="1.6"/>
+    <path d="M868 111 L998 155 M911 97 L1041 141 M868 141 L998 97 M911 155 L1041 111" stroke="#e2b93b" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M825 126 L955 82 L1085 126 L955 170 Z" fill="none" stroke="#f3d877" stroke-width="2.5" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" values="0;0;0.9;0;0" keyTimes="0;0.66;0.78;0.98;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <text x="1098" y="131" fill="#e2b93b" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="2">GOLD</text>
+
+    <!-- serving: live bar chart on top of gold -->
+    <g fill="#5fd3a5" filter="url(#glow)">
+      <rect x="929" y="104" width="10" height="16" rx="2"><animate attributeName="height" values="16;30;12;16" dur="2.4s" repeatCount="indefinite"/><animate attributeName="y" values="104;90;108;104" dur="2.4s" repeatCount="indefinite"/></rect>
+      <rect x="945" y="96" width="10" height="24" rx="2"><animate attributeName="height" values="24;14;34;24" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/><animate attributeName="y" values="96;106;86;96" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/></rect>
+      <rect x="961" y="88" width="10" height="32" rx="2"><animate attributeName="height" values="32;20;40;32" dur="2.4s" begin="-1.2s" repeatCount="indefinite"/><animate attributeName="y" values="88;100;80;88" dur="2.4s" begin="-1.2s" repeatCount="indefinite"/></rect>
+      <rect x="977" y="100" width="10" height="20" rx="2"><animate attributeName="height" values="20;36;18;20" dur="2.4s" begin="-1.8s" repeatCount="indefinite"/><animate attributeName="y" values="100;84;102;100" dur="2.4s" begin="-1.8s" repeatCount="indefinite"/></rect>
+    </g>
+    <text x="958" y="62" text-anchor="middle" fill="#5fd3a5" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" letter-spacing="2">SERVE</text>
+  </g>
+
+  <!-- data particles rising through the layers -->
+  <g fill="#bff3df" filter="url(#glow)">
+    <circle r="2.6"><animateMotion dur="3s" repeatCount="indefinite" path="M915 300 L915 110"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/></circle>
+    <circle r="2.2"><animateMotion dur="3s" begin="-1s" repeatCount="indefinite" path="M955 305 L955 125"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="-1s" repeatCount="indefinite"/></circle>
+    <circle r="2.6"><animateMotion dur="3s" begin="-2s" repeatCount="indefinite" path="M995 300 L995 110"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle r="2"><animateMotion dur="3.6s" begin="-0.5s" repeatCount="indefinite" path="M935 300 L935 115"/><animate attributeName="opacity" values="0;0.8;0.8;0" dur="3.6s" begin="-0.5s" repeatCount="indefinite"/></circle>
+    <circle r="2"><animateMotion dur="3.6s" begin="-2.3s" repeatCount="indefinite" path="M975 300 L975 115"/><animate attributeName="opacity" values="0;0.8;0.8;0" dur="3.6s" begin="-2.3s" repeatCount="indefinite"/></circle>
+    <circle r="2.2" fill="#e8b27a"><animateMotion dur="1.8s" repeatCount="indefinite" path="M800 278 C 840 278, 850 275, 860 272"/></circle>
+  </g>
+</svg>
