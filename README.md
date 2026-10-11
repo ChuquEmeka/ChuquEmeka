@@ -18,10 +18,7 @@ I own platforms end to end: cloud infrastructure and networking, CDC ingestion, 
 
 **Focus areas:** cloud data platforms · CDC and event-driven ingestion · medallion architecture · analytics engineering · infrastructure as code · applied AI on trusted data
 
-## Experience
-
-| Period | Role |
-|---|---|
+---|---|
 | 2025 – present | **Independent Data & Platform Engineer** · Berlin |
 | 2022 – 2024 | **Data Engineer** · Digital Spine GmbH, Berlin |
 | 2020 – 2022 | **Data Specialist** · Potters Real Estate Limited |
